@@ -1,0 +1,90 @@
+.header, .footer
+{
+    display: flex;
+    color:rgb(14, 13, 13);
+    background-color:bisque;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.header
+{
+
+}
+
+.header-links, .footer-links
+{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.footer
+{
+
+}
+
+
+.site-body
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-body-left {
+    width: 20%; /* Takes up 20% of the container's width */
+    padding: 10px; /* Optional: Add some padding for better layout */
+}
+
+.site-body-right {
+    width: 80%; /* Takes up 80% of the container's width */
+    padding: 10px; /* Optional: Add some padding for better layout */
+    display: flex; /* Optional: Use flexbox to manage internal layout */
+    flex-wrap: wrap; /* Optional: Wrap content if needed */
+    justify-content: center;
+}
+
+div.project {
+    border: 1px solid #ccc;
+
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.project:hover {
+    border: 1px solid #777;
+}
+
+div.project img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.project-responsive {
+    padding: 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+a
+{
+    text-decoration: none;
+    color:rgb(14, 13, 13);
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+}
