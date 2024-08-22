@@ -1,33 +1,41 @@
 .header, .footer
 {
     display: flex;
-    color:rgb(14, 13, 13);
-    background-color:bisque;
-    justify-content: space-between;
+    color:rgb(232, 229, 223);
+    background-color:rgb(48, 45, 42);
+    justify-content: space-between; 
     align-items: center;
-    padding: 0px 20px;
+    padding: 0px 50px;
 }
 
 .header
 {
-
+    position: fixed; /* Fixes the header at the top of the page */
+    top: 0; /* Aligns the header at the top */
+    left: 0; /* Aligns the header to the left */
+    width: 100%; /* Ensures the header takes up the full width of the page */
+    z-index: 1000; /* Keeps the header on top of other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for visual separation */
 }
 
 .header-links, .footer-links
 {
     display: flex;
     list-style-type: none;
-    gap: 20px;
+    gap: 30px;
 }
 
 .footer
 {
-
+    position: absolute;
+    width: 100%;
+    min-height: 5%;
+    margin: 30px 0 0 -10px;
 }
-
 
 .site-body
 {
+    margin-top: 50px; /* Adjust this value based on the header height to avoid overlap */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,15 +43,23 @@
 
 .site-body-left {
     width: 20%; /* Takes up 20% of the container's width */
-    padding: 10px; /* Optional: Add some padding for better layout */
+    background-color: brown;
+   /* position: fixed;  Fixes the header at the top of the page */
+   /* top: 0; /* Aligns the header at the top */
+   /* right: 0; /* Aligns the header to the left */
+  /*  z-index: 500; Keeps the header on top of other content*/
+}
+
+.site-body-left img {
+    border-radius: 50%;
 }
 
 .site-body-right {
     width: 80%; /* Takes up 80% of the container's width */
-    padding: 10px; /* Optional: Add some padding for better layout */
     display: flex; /* Optional: Use flexbox to manage internal layout */
     flex-wrap: wrap; /* Optional: Wrap content if needed */
     justify-content: center;
+    align-items: center;
 }
 
 div.project {
@@ -80,7 +96,14 @@ div.desc {
 a
 {
     text-decoration: none;
-    color:rgb(14, 13, 13);
+    color:rgb(232, 229, 223);
+}
+
+a:hover
+{
+    text-decoration:none; 
+    color:#2891ac; 
+    cursor:pointer;  
 }
 
 img
