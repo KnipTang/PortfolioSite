@@ -1,10 +1,11 @@
+body{
+    background-color: rgb(244, 238, 231);
+    font-family: Verdana, sans-serif;
+}
+
 .header, .footer
 {
-    display: flex;
-    color:rgb(232, 229, 223);
-    background-color:rgb(48, 45, 42);
-    justify-content: space-between; 
-    align-items: center;
+    color:rgb(0, 0, 0);
     padding: 0px 50px;
 }
 
@@ -15,49 +16,87 @@
     left: 0; /* Aligns the header to the left */
     width: 100%; /* Ensures the header takes up the full width of the page */
     z-index: 1000; /* Keeps the header on top of other content */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for visual separation */
+    background-color: rgb(244, 238, 231);
+    font-weight: bolder;
 }
 
 .header-links, .footer-links
 {
     display: flex;
+    justify-content: space-between; 
+    align-items: center;
     list-style-type: none;
-    gap: 30px;
 }
 
 .footer
 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+
     position: absolute;
     width: 100%;
     min-height: 5%;
-    margin: 30px 0 0 -10px;
+    margin: 0px 0 0 -10px;
+
+    font-weight: bolder;
 }
+.footer-links
+{
+    gap: 50px;
+}
+
 
 .site-body
 {
     margin-top: 50px; /* Adjust this value based on the header height to avoid overlap */
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
-.site-body-left {
-    width: 20%; /* Takes up 20% of the container's width */
-    background-color: brown;
-   /* position: fixed;  Fixes the header at the top of the page */
-   /* top: 0; /* Aligns the header at the top */
-   /* right: 0; /* Aligns the header to the left */
-  /*  z-index: 500; Keeps the header on top of other content*/
+
+
+.site-body-AboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Takes up 20% of the container's width */
+    /* padding: 0px 50px; */
+    /* position: fixed;  Fixes the header at the top of the page */
+    /* top: 0; /* Aligns the header at the top */
+    /* right: 0; /* Aligns the header to the left */
+    /*  z-index: 500; Keeps the header on top of other content*/
 }
 
-.site-body-left img {
-    border-radius: 50%;
+.site-body-AboutMe h1 {
+    font-size: 10vw;
+    margin: 0;
 }
 
-.site-body-right {
-    width: 80%; /* Takes up 80% of the container's width */
+
+
+.site-body-Projects {
     display: flex; /* Optional: Use flexbox to manage internal layout */
     flex-wrap: wrap; /* Optional: Wrap content if needed */
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-Title
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 0;
+    padding: 0px 50px;
+    font-weight: bolder;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -96,13 +135,13 @@ div.desc {
 a
 {
     text-decoration: none;
-    color:rgb(232, 229, 223);
+    color:rgb(0, 0, 0);
 }
 
 a:hover
 {
     text-decoration:none; 
-    color:#2891ac; 
+    color:#165b6b; 
     cursor:pointer;  
 }
 
@@ -110,4 +149,9 @@ img
 {
     max-width: 100%;
     height: auto;
+}
+
+li
+{
+    list-style-type: none;
 }
