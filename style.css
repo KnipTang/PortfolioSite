@@ -52,7 +52,7 @@ body{
 
 .site-body
 {
-    padding: 0px 50px;
+    padding: 0 10%;
     margin-top: 50px; /* Adjust this value based on the header height to avoid overlap */
     display: flex;
     flex-direction: column;
@@ -60,16 +60,31 @@ body{
 }
 
 
-.site-body-AboutMe {
+.site-body-Intro {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
-.site-body-AboutMe h1 {
+.site-body-Intro h1 {
     font-size: 10vw;
     margin: 0;
+
+    white-space: nowrap; /* Prevent text from wrapping to a new line */
+}
+
+
+.site-body-AboutMe
+{
+    display: flex;
+    padding: 2% 0%;
+}
+
+.site-body-AboutMe p{
+    padding-right: 50%;
+    font-family: Garamond, serif;
+    font-size: large;
 }
 
 
@@ -87,6 +102,8 @@ body{
     justify-content: space-between; 
     align-items: center;
 
+    padding: 0;
+
     font-weight: bolder;
 }
 
@@ -100,7 +117,7 @@ body{
 div.project {
     border: 1px solid #ccc;
 
-    background-color: white;
+    background-color: rgb(240, 225, 208);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
