@@ -153,3 +153,27 @@ li
 {
     list-style-type: none;
 }
+
+
+
+
+.form-popup
+{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    max-width: 90%; /* Ensure it doesn't overflow on smaller screens */
+    max-height: 90%; /* Ensure it doesn't overflow vertically */
+    z-index: 1000;
+
+    border-radius: 30px;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #777;
+}

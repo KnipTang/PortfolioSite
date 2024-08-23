@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Portofolio</title>
 </head>
 <body>
@@ -35,10 +36,8 @@
             </ul>
           <div class="projects">
             <div class="project-responsive">
-                <div class="project">
-                  <a target="_blank" href="images/ID_Picture.jpg">
+                <div class="project" id="clickedd">
                     <img src="images/ID_Picture.jpg" alt="Cinque Terre" width="600" height="400">
-                  </a>
                   <div class="desc">Add a description of the image here</div>
                 </div>
             </div>
@@ -99,9 +98,18 @@
     <div class="footer">
         <p>made by: Arne Olemans</p>
         <ul class="footer-links">
-            <li><a href="#" target="_blank">GitHub</a></li>
+            <li><a href="https://github.com/KnipTang" target="_blank">GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/arne-olemans-5b0a03253/" target="_blank">LinkedIn</a></li>
         </ul>
     </div>
+
+
+    <div class="form-popup" id="myForm">
+        <!-- <img src="images/ID_Picture.jpg" alt=""> -->
+
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </div>
+
+
 </body>
 </html>
