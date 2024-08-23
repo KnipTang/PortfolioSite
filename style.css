@@ -11,11 +11,11 @@ body{
 
 .header
 {
-    position: fixed; /* Fixes the header at the top of the page */
-    top: 0; /* Aligns the header at the top */
-    left: 0; /* Aligns the header to the left */
-    width: 100%; /* Ensures the header takes up the full width of the page */
-    z-index: 1000; /* Keeps the header on top of other content */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     background-color: rgb(244, 238, 231);
     font-weight: bolder;
 }
@@ -26,6 +26,8 @@ body{
     justify-content: space-between; 
     align-items: center;
     list-style-type: none;
+
+    padding: 0;
 }
 
 .footer
@@ -61,12 +63,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%; /* Takes up 20% of the container's width */
-    /* padding: 0px 50px; */
-    /* position: fixed;  Fixes the header at the top of the page */
-    /* top: 0; /* Aligns the header at the top */
-    /* right: 0; /* Aligns the header to the left */
-    /*  z-index: 500; Keeps the header on top of other content*/
+    width: 100%;
 }
 
 .site-body-AboutMe h1 {
@@ -77,8 +74,8 @@ body{
 
 
 .site-body-Projects {
-    display: flex; /* Optional: Use flexbox to manage internal layout */
-    flex-wrap: wrap; /* Optional: Wrap content if needed */
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -141,7 +138,7 @@ a
 a:hover
 {
     text-decoration:none; 
-    color:#165b6b; 
+    color:#d86a15; 
     cursor:pointer;  
 }
 
