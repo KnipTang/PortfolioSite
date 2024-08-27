@@ -170,7 +170,7 @@ div.project {
 }
 
 div.project:hover {
-    border: 1px solid #777;
+    border: 3px solid #d86a15;
 
     /* Scale up the project slightly on hover */
     transform: scale(1.05);
