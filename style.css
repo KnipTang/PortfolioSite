@@ -81,18 +81,56 @@ body{
 }
 
 
-.site-body-AboutMe
-{
+.site-body-AboutMe {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 2% 0%;
 }
 
-.site-body-AboutMe p{
-    padding-right: 50%;
+.site-body-AboutMe p {
     font-family: Garamond, serif;
     font-size: large;
+    margin: 0 0 20px;
+    width: 50%;
+    text-align: center;
 }
 
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the button container */
+}
+
+.site-body-AboutMe button {
+    background-color: #202020;
+    text-align: center;
+    border: none; /* Removes the border */
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    color: rgb(244, 238, 231);
+    font-size: larger;
+    border-radius: 20px; 
+    display: flex; /* Allows aligning the image and text inline */
+    align-items: center; /* Vertically centers the image and text */
+}
+
+.site-body-AboutMe button img.button-icon {
+    margin-right: 8px; /* Adds space between the image and the text */
+    width: 20px;
+    height: auto; /* Maintains aspect ratio */
+}
+
+.site-body-AboutMe button:hover {
+    color:#d86a15; 
+    cursor:pointer;  
+}
+
+.site-body-AboutMe button:hover img.button-icon {
+    filter: brightness(0) saturate(100%) invert(65%) sepia(96%) saturate(3985%) hue-rotate(356deg) brightness(102%) contrast(105%);
+}
 
 .site-body-Projects {
     display: flex;
@@ -128,6 +166,7 @@ div.project {
 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+    border-radius: 15px; /* Added to round the corners */
 }
 
 div.project:hover {
@@ -143,6 +182,8 @@ div.project:hover {
 div.project img {
     width: 100%;
     height: auto;
+    border-radius: 15px 15px 0 0; /* Rounds the top corners of the image to match the project container */
+
 }
 
 div.desc {
