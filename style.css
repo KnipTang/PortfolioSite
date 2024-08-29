@@ -65,7 +65,19 @@ body{
     gap: 50px;
 }
 
+.footer-links img.button-icon {
+    width: 40px;
+    height: auto; /* Maintains aspect ratio */
+}
 
+.footer-links:hover {
+    color:#d86a15; 
+    cursor:pointer;  
+}
+
+.footer-links a:hover img.button-icon {
+    filter: brightness(0) saturate(100%) invert(65%) sepia(96%) saturate(3985%) hue-rotate(356deg) brightness(102%) contrast(105%);
+}
 
 .site-body
 {
