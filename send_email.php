@@ -1,4 +1,5 @@
 <?php
+
 require '..vendor/autoload.php';  // Include the Composer autoload file
 
 use PHPMailer\PHPMailer\PHPMailer;
