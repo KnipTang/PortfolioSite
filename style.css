@@ -197,6 +197,10 @@ div.project {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     border-radius: 15px; /* Added to round the corners */
+
+    overflow: hidden; /* Ensure content doesn't overflow */
+    width: 100%; /* Take up the full width of the responsive container */
+    height: 400px; /* Set a fixed height for all project containers */
 }
 
 div.project:hover {
@@ -211,13 +215,19 @@ div.project:hover {
 
 div.project img {
     width: 100%;
-    height: auto;
+    height: 80%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+
     border-radius: 15px 15px 0 0; /* Rounds the top corners of the image to match the project container */
 }
 
 div.desc {
-    padding: 15px;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    font-size: 1em; /* Ensure the text size is readable */
+    background-color: rgb(242, 232, 222); /* Match the background of the container */
+    height: 20%; /* Allow the height to adjust based on content */
 }
 
 * {
