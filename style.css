@@ -71,7 +71,7 @@ body{
 {
     padding: 0 5%;
     margin-top: 50px; /* Adjust this value based on the header height to avoid overlap */
-    margin-bottom: 70px; /* Adjust this value based on the header height to avoid overlap */
+    margin-bottom: 100px; /* Adjust this value based on the header height to avoid overlap */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,6 +117,20 @@ body{
     width: 100%;
     display: flex;
 }
+
+.site-body-Contact
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-body-Contact p{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
 
 .cv-button {
     background-color: #202020;
@@ -272,31 +286,31 @@ li
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-  }
-  
-  .contact-form label {
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
-  .contact-form input, .contact-form textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-  }
-  
-  .contact-form button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #202020;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .contact-form button:hover {
-    background-color: #d86a15;
-  }
+}
+
+.contact-form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact-form button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #202020;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #d86a15;
+}
