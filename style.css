@@ -3,7 +3,6 @@ html {
     scroll-padding-bottom: 60px; /* Adjust the value to match the header height */
 
     scroll-behavior: smooth;
-
 }
 
 body{
