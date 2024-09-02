@@ -105,6 +105,12 @@ body{
     gap: 20%;
 }
 
+.footer-Links img
+{
+    width: 40px;
+    height: auto;
+}
+
 .footer-Links:hover {
     color:#d86a15; 
     cursor:pointer;  
