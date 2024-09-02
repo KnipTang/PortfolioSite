@@ -460,6 +460,8 @@ ul
     .header, .footer
     {
         font-size: x-small;
+
+        height: 10%;
     }
 
     .footer-CV
@@ -497,11 +499,25 @@ ul
     .header, .footer
     {
         font-size: small;
+
+        height: 10%;
+    }
+
+    .footer-CV
+    {
+        width: 20%;
+    }
+
+    .footer-Links
+    {
+        width: 20%;
     }
 
     .footer-Contact
     {
-        flex-direction: column;
+        flex-direction: row;
+
+        width: 60%;
     }
 
     .footer-Contact p
@@ -523,11 +539,25 @@ ul
     .header, .footer
     {
         font-size: medium;
+
+        height: 7%;
+    }
+
+    .footer-CV
+    {
+        width: 20%;
+    }
+
+    .footer-Links
+    {
+        width: 20%;
     }
 
     .footer-Contact
     {
         flex-direction: row;
+
+        width: 60%;
     }
 
     .footer-Contact p
@@ -549,11 +579,25 @@ ul
     .header, .footer
     {
         font-size: large;
+
+        height: 7%;
+    }
+
+    .footer-CV
+    {
+        width: 20%;
+    }
+
+    .footer-Links
+    {
+        width: 20%;
     }
 
     .footer-Contact
     {
         flex-direction: row;
+
+        width: 60%;
     }
 
     .footer-Contact p
@@ -575,11 +619,25 @@ ul
     .header, .footer
     {
         font-size: large;
+
+        height: 7%;
+    }
+
+    .footer-CV
+    {
+        width: 20%;
+    }
+
+    .footer-Links
+    {
+        width: 20%;
     }
 
     .footer-Contact
     {
         flex-direction: row;
+
+        width: 60%;
     }
 
     .footer-Contact p
