@@ -11,84 +11,144 @@ body{
     color:rgb(0, 0, 0);
 }
 
+
+
+
+
+
+/* Header and Footer shared  */
+
+.header, .footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+    
+    width: 100%;
+    height: 7%;
+    
+    background-color: rgb(244, 238, 231);
+    font-size: large; /* media */
+    font-weight: bolder;
+}
+
+
+
+
+
+
+/* Header */
+
 .header
 {
     top: 0;
 }
 
-.header, .footer
+.header-links
 {
-    position: fixed;
-    left: 0;
-    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
 
     width: 100%;
 
-    background-color: rgb(244, 238, 231);
-    font-size: larger;
-    font-weight: bolder;
-}
-
-.header-links, .footer-links
-{
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    list-style-type: none;
-}
-
-.header-links
-{
     padding: 0px 50px;
 }
+
+
+
+
+
+
+
+/* footer */
 
 .footer
 {
     bottom: 0;
-    padding: 10px 50px;
+}
+
+.footer-CV
+{
     display: flex;
-    justify-content: space-between; 
     align-items: center;
+    justify-content: center;
+
+    width: 20%;
 }
 
 .footer-Contact {
     display: flex;
-    gap: 50px;
-    margin: 0 auto; /* Center the email horizontally */
-    position: absolute; /* Position the email in the center */
-    left: 50%;
-    transform: translateX(-50%);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 60%;
+    
+    gap: 10%;
+    white-space: nowrap;
 }
-.footer-links
+
+.footer-Links
 {
-    gap: 50px;
-    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 20%;
+
+    gap: 20%;
 }
 
-.footer-links img.button-icon {
-    width: 40px;
-    height: auto; /* Maintains aspect ratio */
-}
-
-.footer-links:hover {
+.footer-Links:hover {
     color:#d86a15; 
     cursor:pointer;  
 }
 
-.footer-links a:hover img.button-icon {
+.footer-Links a:hover img.button-icon {
     filter: brightness(0) saturate(100%) invert(65%) sepia(96%) saturate(3985%) hue-rotate(356deg) brightness(102%) contrast(105%);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Global site body */
 
 .site-body
 {
     padding: 0 5%;
-    margin-top: 50px; /* Adjust this value based on the header height to avoid overlap */
-    margin-bottom: 100px; /* Adjust this value based on the header height to avoid overlap */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.site-body img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+/* Home page // Intro */
 
 .site-body-Intro {
     display: flex;
@@ -105,6 +165,16 @@ body{
 }
 
 
+
+
+
+
+
+
+
+
+/* About Me */
+
 .site-body-AboutMe {
     display: flex;
     flex-direction: column;
@@ -114,7 +184,7 @@ body{
 
 .site-body-AboutMe p {
     font-family: Garamond, serif;
-    font-size: x-large;
+    font-size: x-large; /* This scales the font size based on the viewport width */
     margin: 0 0 20px;
     width: 50%;
     text-align: center;
@@ -125,54 +195,19 @@ body{
     justify-content: center; /* Centers the button container */
 }
 
-.button-container {
-    width: 100%;
-    display: flex;
-}
-
-.site-body-Contact
-{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.site-body-Contact p{
-    font-size: x-large;
-    font-weight: bolder;
-}
 
 
-.cv-button {
-    background-color: #202020;
-    text-align: center;
-    border: none; /* Removes the border */
-    width: auto;
-    height: auto;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    color: rgb(244, 238, 231);
-    font-size: larger;
-    border-radius: 20px; 
-    display: flex; /* Allows aligning the image and text inline */
-    align-items: center; /* Vertically centers the image and text */
-}
 
-.cv-button img.button-icon {
-    margin-right: 8px; /* Adds space between the image and the text */
-    width: 20px;
-    height: auto; /* Maintains aspect ratio */
-}
 
-.cv-button:hover {
-    color:#d86a15; 
-    cursor:pointer;  
-}
 
-.cv-button:hover img.button-icon {
-    filter: brightness(0) saturate(100%) invert(65%) sepia(96%) saturate(3985%) hue-rotate(356deg) brightness(102%) contrast(105%);
-}
+
+
+
+
+
+
+
+/* Projects */
 
 .site-body-Projects {
     display: flex;
@@ -187,7 +222,7 @@ body{
     display: flex;
     justify-content: space-between; 
     align-items: center;
-
+    
     padding: 0;
 
     font-weight: bolder;
@@ -202,14 +237,14 @@ body{
 
 div.project {
     border: 1px solid #ccc;
-
+    
     background-color: rgb(242, 232, 222);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+    
     border-radius: 15px; /* Added to round the corners */
-
+    
     overflow: hidden; /* Ensure content doesn't overflow */
     width: 100%; /* Take up the full width of the responsive container */
     height: 400px; /* Set a fixed height for all project containers */
@@ -217,10 +252,10 @@ div.project {
 
 div.project:hover {
     border: 3px solid #d86a15;
-
+    
     /* Scale up the project slightly on hover */
     transform: scale(1.05);
-
+    
     /* Enhance the shadow effect on hover */
     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3), 0 8px 24px 0 rgba(0, 0, 0, 0.25);
 }
@@ -229,7 +264,7 @@ div.project img {
     width: 100%;
     height: 80%;
     object-fit: cover; /* Ensure the image covers the entire container */
-
+    
     border-radius: 15px 15px 0 0; /* Rounds the top corners of the image to match the project container */
 }
 
@@ -243,10 +278,6 @@ div.desc {
     margin: 0 10%;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 .project-responsive {
     padding: 6px;
     float: left;
@@ -255,52 +286,25 @@ div.desc {
 
 
 
-a
+
+
+
+
+
+
+/* contact-form */
+
+.site-body-Contact
 {
-    text-decoration: none;
-    color:rgb(0, 0, 0);
-}
-
-a:hover
-{
-    text-decoration:none; 
-    color:#d86a15; 
-    cursor:pointer;  
-}
-
-img
-{
-    max-width: 100%;
-    height: auto;
-}
-
-li
-{
-    list-style-type: none;
-}
-
-
-
-
-.form-popup
-{
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    height: 90%;
-    max-width: 90%; /* Ensure it doesn't overflow on smaller screens */
-    max-height: 90%; /* Ensure it doesn't overflow vertically */
-    z-index: 1000;
-
-    border-radius: 30px;
-
-    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+}
 
-    background-color: #777;
+.site-body-Contact p{
+    font-size: x-large;
+    font-weight: bolder;
 }
 
 .contact-form {
@@ -336,4 +340,248 @@ li
 
 .contact-form button:hover {
   background-color: #d86a15;
+}
+
+
+
+
+
+
+
+
+
+/* global */
+
+* {
+    box-sizing: border-box;
+}
+
+a
+{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+
+a:hover
+{
+    text-decoration:none; 
+    color:#d86a15; 
+    cursor:pointer;  
+}
+
+li
+{
+    list-style-type: none;
+}
+
+ul
+{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+/* cv-Button */
+
+.button-container {
+    display: flex;
+}
+
+.cv-button {
+    background-color: #202020;
+    text-align: center;
+    border: none; /* Removes the border */
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    color: rgb(244, 238, 231);
+    font-size: larger;
+    border-radius: 20px; 
+    display: flex; /* Allows aligning the image and text inline */
+    align-items: center; /* Vertically centers the image and text */
+}
+
+.cv-button img.button-icon {
+    margin-right: 8px; /* Adds space between the image and the text */
+    width: 20px;
+    height: auto; /* Maintains aspect ratio */
+}
+
+.cv-button:hover {
+    color:#d86a15; 
+    cursor:pointer;  
+}
+
+.cv-button:hover img.button-icon {
+    filter: brightness(0) saturate(100%) invert(65%) sepia(96%) saturate(3985%) hue-rotate(356deg) brightness(102%) contrast(105%);
+}
+
+
+
+
+
+
+
+.form-popup
+{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    max-width: 90%; /* Ensure it doesn't overflow on smaller screens */
+    max-height: 90%; /* Ensure it doesn't overflow vertically */
+    z-index: 1000;
+
+    border-radius: 30px;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #777;
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .header, .footer
+    {
+        font-size: small;
+    }
+
+    .footer-Contact
+    {
+        flex-direction: column;
+    }
+
+    .footer-Contact p
+    {
+        margin: 5px 0;
+    }
+
+    .site-body-AboutMe p
+    {
+        font-size: medium;
+    }
+    
+    .project-responsive {
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px) {
+    .header, .footer
+    {
+        font-size: small;
+    }
+
+    .footer-Contact
+    {
+        flex-direction: column;
+    }
+
+    .footer-Contact p
+    {
+        margin: 5px 0;
+    }
+
+    .site-body-AboutMe p
+    {
+        font-size: medium;
+    }
+
+    .project-responsive {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .header, .footer
+    {
+        font-size: medium;
+    }
+
+    .footer-Contact
+    {
+        flex-direction: row;
+    }
+
+    .footer-Contact p
+    {
+        margin: 0;
+    }
+
+    .site-body-AboutMe p
+    {
+        font-size: large;
+    }
+
+    .project-responsive {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .header, .footer
+    {
+        font-size: large;
+    }
+
+    .footer-Contact
+    {
+        flex-direction: row;
+    }
+
+    .footer-Contact p
+    {
+        margin: 0;
+    }
+
+    .site-body-AboutMe p
+    {
+        font-size: x-large;
+    }
+
+    .project-responsive {
+        width: 33.333333%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header, .footer
+    {
+        font-size: large;
+    }
+
+    .footer-Contact
+    {
+        flex-direction: row;
+    }
+
+    .footer-Contact p
+    {
+        margin: 0;
+    }
+
+    .site-body-AboutMe p
+    {
+        font-size: x-large;
+    }
+
+    .project-responsive {
+        width: 24.99999%;
+    }
 }
