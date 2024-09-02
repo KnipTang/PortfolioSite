@@ -11,6 +11,8 @@ function adjustBodyMargins() {
     siteBody.style.marginTop = `${headerHeight}px`;
     siteBody.style.marginBottom = `${footerHeight}px`;
 
+    
+
     footerLinksLinks.forEach(img => {
         img.style.height = `${footerHeight/1.5}px`;
         img.style.width = 'auto';

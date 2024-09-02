@@ -462,9 +462,20 @@ ul
         font-size: small;
     }
 
+    .footer-CV
+    {
+        width: 25%;
+    }
+
+    .footer-Links
+    {
+        width: 25%;
+    }
     .footer-Contact
     {
         flex-direction: column;
+
+        width: 50%;
     }
 
     .footer-Contact p
