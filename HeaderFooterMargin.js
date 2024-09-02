@@ -11,10 +11,15 @@ function adjustBodyMargins() {
     siteBody.style.marginTop = `${headerHeight}px`;
     siteBody.style.marginBottom = `${footerHeight}px`;
 
-    
+    const windowWidth = window.innerWidth;
+
+    footerDivider = 1.5;
+
+    if (windowWidth <= 600)
+        footerDivider = 2;
 
     footerLinksLinks.forEach(img => {
-        img.style.height = `${footerHeight/1.5}px`;
+        img.style.height = `${footerHeight/footerDivider}px`;
         img.style.width = 'auto';
     });
 }

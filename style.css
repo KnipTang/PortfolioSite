@@ -459,7 +459,7 @@ ul
 @media (max-width: 600px) {
     .header, .footer
     {
-        font-size: small;
+        font-size: x-small;
     }
 
     .footer-CV
