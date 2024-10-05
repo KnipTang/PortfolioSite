@@ -1,0 +1,12 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Redirect root requests to PortfolioSite
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^$ /PortfolioSite/ [L]
+
+<Files "config.php">
+    Order Allow,Deny
+    Deny from all
+</Files>
+

@@ -7,7 +7,8 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src="script.js" defer></script>
     <script src="HeaderFooterMargin.js" defer></script>
-    <title>Portofolio</title>
+    <script src="emailSubmit.js" defer></script>
+    <title>Portfolio</title>
 </head>
 <body>
     <div class="header">
@@ -23,11 +24,11 @@
 
         <div class="site-body-Intro">
           <h1>ARNE OLEMANS</h1>
-          <img src="images/BigPF_Pic.png" alt="">
+          <img src="images/BigPF_Pic.jpg" alt="">
         </div>
 
         <div class="site-body-AboutMe" id="about">
-          <p>I'm Arne Olemans, a curious and driven individual with a lifelong passion for exploring technology and the world around me. From a young age, I've been fascinated by software and technology, starting with my early days of tinkering with Nintendo games and desktop PCs. This curiosity has fueled my journey into understanding and creating within the tech space.</p>
+          <p>I am Arne Olemans, I always dreamed of world domination, but my mother refused to fund those dreams. So a become a <b>curious</b> and <b>driven</b> individual with a lifelong passion for exploring technology and the world around me. From a young age, I've been fascinated by <b>software</b> and <b>technology</b>, starting with my early days of tinkering with Nintendo games and desktop PCs. This curiosity has fueled my journey into understanding and creating within the software developent with a special intrest in the <b>Game Development</b> industry.</p>
           <div class="button-container">
             <a href="CV/CV-Arne_Olemans.pdf" target="_blank">
               <button class="cv-button">
@@ -47,71 +48,136 @@
               <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/202" target="_blank">[202]</a></li>
             </ul>
           <div class="projects">
-            <div class="project-responsive">
-                <!-- <div class="project" id="clickedd"> -->
-                <div class="project">
-                  <a href="https://github.com/KnipTang/GameEngine" target="_blank">
-                    <img src="images/Projects/Project_GameEngine.png" alt="Cinque Terre" width="600" height="400">
-                  <div class="desc">Custom Game Engine</div>
+            <div class="bigProjects">
+              <div class="project-big">
+                <div class="projectBig-main projectBig-main-one">
+                  <img src="images/Projects/Project_GameEngine.jpg" alt="Cinque Terre" width="600" height="400">
                 </div>
-                </a>
-            </div>
-            <div class="project-responsive">
-                <div class="project">
-                  <a href="https://github.com/KnipTang/GameEngine_Pengo" target="_blank">
-                    <img src="images/Projects/Project_Pengo.jpg" alt="Cinque Terre" width="600" height="400">
-                  <div class="desc">Pengo SEGA 1982 - Remake of Pengo made in my own game engine</div>
-                </div>
-                </a>
-            </div>
-            <div class="project-responsive">
-              <div class="project">
-                <a href="https://github.com/KnipTang/FlappyBird-Genetic_Algorithm" target="_blank">
-                  <img src="images/Projects/Project_FlappyBird.jpg" alt="Cinque Terre" width="600" height="400">
-                  <div class="desc">A genetic algorithm that can perfectly play the mobile game Flappy Bird</div>
-                </div>
-              </a>
-            </div>
-            <div class="project-responsive">
-              <div class="project">
-                <a href="https://github.com/KnipTang/FormFrenzy" target="_blank">
-                  <img src="images/Projects/Project_FormFrenzy.png" alt="Cinque Terre" width="600" height="400">
-                  <div class="desc">Two-Player Co-Op form matcher - Unity - Group Project</div>
-                </div>
-              </a>
-            </div>
-            <div class="project-responsive">
-              <div class="project">
-                <a href="https://github.com/KnipTang/Vulkan-2D_Engine" target="_blank">
-                  <img src="images/Projects/Project_Vulkan.jpg" alt="Cinque Terre" width="600" height="400">
-                <div class="desc">2D Vulkan Engine</div>
+                <div class="projectBig-desc">
+                  <div> <div class="projectBig-Title"><b>KnipTang-Engine</b> - Custom C++ Game-Engine</div>
+                  <br>
+                  The first game engine I ever made from scratch.
+                  <br>
+                  <br>
+                  The creation of this game engine took my engineering, c++, and programming skills to a whole new level.                    
+                  <br>
+                  <br>
+                  I learned so much about all kinds of different technical fields and concepts. It opened the world of all sorts of varying gameplay patrons and which ones are best to use in what situations and others you should better avoid.                    
+                  <br>
+                  <br>
+                  All the different techniques on how you could optimize and be capable of rendering and controlling all sorts of massive concepts with those patrons fueled my passion for programming again, in the same way it did when I first started programming.
+                  <br>
+                  <br>
+                  Besides that, this project also taught me the crucial importance of good coding habits and practices when working with a large code base that will keep increasing in size like this one.                 
+                  <br>
+                  <br>
+                  After finishing this engine I realized how much easier it became for me to grasp concepts and tools in different game engines. Understanding the ins and outs of how game engines get developed greatly shifted my perception of game development overall.
+                  <br>
+                  <br>
+                  I can say with certainty that developing this engine has been the most significant learning experience I have had in my journey as a software engineer.
+                  <br>
+                  <br>
+                  If you want to find more information about the technical aspects of this project feel free to visit my <a href="https://github.com/KnipTang/KnipTang-Engine" target="_blank">Github readme paper</a> associated with this project.
+                  </div>
+                  </div>
               </div>
+              <div class="project-big">
+                <div class="projectBig-desc">
+                  <img class="float-right" src="images/Projects/FlappyBird_Gif.gif" alt="flappy bird genertic algorithm gif">
+                  <div> <div class="projectBig-Title"><b>A genetic algorithm</b> that can perfectly play the mobile game <b>Flappy Bird</b></div>
+                  <br>
+                    This project was my introduction to neural network programming. 
+                    <br>
+                    <br>
+                    When I came up with the idea to develop this project I had no clue where to start. I knew that there would be a lot of new concepts I needed to grasp to successfully complete this project. 
+                    <br>
+                    <br>
+                    Besides all the technical concepts, the development of this project taught me something way more valuable. It taught me one of the most important thinking patrons I have learned about programming. 
+                    <br>
+                    <br>
+                    When trying to find solutions for problems you encounter while developing big or even small projects it's of the highest importance to keep breaking down your problem into smaller pieces. Keep doing this until, what seemed to be a gigantic unsolvable problem, gets converted into just lots of small easily solvable problems that have 9/10 times plain solutions.
+                    <br>
+                    <br>
+                    If you want to find more information about the technical aspects of this project feel free to visit my <a href="https://github.com/KnipTang/FlappyBird-Genetic_Algorithm" target="_blank">Github readme paper</a> associated with this project.</div>
+                  </div>
+                <div class="projectBig-main projectBig-main-two">
+                  <img src="images/Projects/Project_FlappyBird.jpg" alt="Cinque Terre" width="600" height="400">
+                </div>
+              </div>
+              <div class="project-big">
+                <div class="projectBig-main projectBig-main-one">
+                  <img src="images/Projects/Project_FormFrenzy.jpg" alt="Cinque Terre" width="600" height="400">
+                </div>
+                <div class="projectBig-desc">
+                  <div> <div class="projectBig-Title"><b>Form Frenzy</b> - Two-Player Party Co-Op form matcher - Group Project - <b>Lead Programmer</b> - Unity</div>
+                  <br>
+                    This project was my introduction to neural network programming. 
+                    <br>
+                    <br>
+                    When I came up with the idea to develop this project I had no clue where to start. I knew that there would be a lot of new concepts I needed to grasp to successfully complete this project. 
+                    <br>
+                    <br>
+                    Besides all the technical concepts, the development of this project taught me something way more valuable. It taught me one of the most important thinking patrons I have learned about programming. 
+                    <br>
+                    <br>
+                    When trying to find solutions for problems you encounter while developing big or even small projects it's of the highest importance to keep breaking down your problem into smaller pieces. Keep doing this until, what seemed to be a gigantic unsolvable problem, gets converted into just lots of small easily solvable problems that have 9/10 times plain solutions.
+                    <br>
+                    <br>
+                    If you want to find more information about the technical aspects of this project feel free to visit my <a href="https://github.com/KnipTang/FlappyBird-Genetic_Algorithm">Github readme paper</a> associated with this project.</div>
+                  </div>
+              </div>
+            </div>
+            <div class="smallProjects">
+              <div class="project-responsive">
+                <div class="project">
+                  <a href="https://github.com/KnipTang/Vulkan-2D_Engine" target="_blank">
+                    <img src="images/Projects/Project_Vulkan.jpg" alt="Cinque Terre" width="600" height="400">
+                  <div class="desc">2D <b>Vulkan</b> Engine</div>
+                </div>
               </a>
             </div>
-            <div class="project-responsive">
-              <div class="project">
-                <a href="https://github.com/KnipTang/DirectX_Rasterizer" target="_blank">
-                  <img src="images/Projects/Project_DirectX.PNG" alt="Cinque Terre" width="600" height="400">
-                <div class="desc">Rasterizer - DirectX</div>
+              <div class="project-responsive">
+                <!-- <div class="project" id="clickedd"> -->
+                  <div class="project">
+                    <a href="https://kniptang.itch.io/ride-of-giri" target="_blank">
+                      <img src="images/Projects/Project_RideOfGiri.jpg" alt="Cinque Terre" width="600" height="400">
+                  <div class="desc"><b>Ride Of Giri</b> - Unnwrap group GameJam project</div>
+                </div>
+              </a>
+            </div>
+          <div class="project-responsive">
+            <div class="project">
+              <a href="https://github.com/KnipTang/Webcam_Face_Detection_Blur" target="_blank">
+                <img src="images/Projects/Project_OpenCV.jpg" alt="Cinque Terre" width="600" height="400">
+                <div class="desc">In-Real-Time webcam face detection blur - <b>OpenCV</b></div>
               </div>
             </a>
-            </div>
-            <div class="project-responsive">
-              <div class="project">
-                <a href="https://github.com/KnipTang/Webcam_Face_Detection_Blur" target="_blank">
-                  <img src="images/Projects/Project_OpenCV.png" alt="Cinque Terre" width="600" height="400">
-                <div class="desc">In-Real-Time webcam face detection blur</div>
-              </div>
-              </a>
-            </div>
           </div>
+          <div class="project-responsive">
+            <div class="project">
+              <a href="https://github.com/KnipTang/GameEngine_Pengo" target="_blank">
+                <img src="images/Projects/Project_Pengo.jpg" alt="Cinque Terre" width="600" height="400">
+                <div class="desc"><b>Pengo SEGA 1982</b> - Remake of Pengo made in my own Game-Engine(KnipTang-Engine)</div>
+              </div>
+            </a>
+          </div>
+          <div class="project-responsive">
+            <div class="project">
+              <a href="https://github.com/KnipTang/DirectX_Rasterizer" target="_blank">
+                <img src="images/Projects/Project_DirectX.jpg" alt="Cinque Terre" width="600" height="400">
+                <div class="desc"><b>Rasterizer</b> - DirectX</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        </div>
         </div>
           
           <hr width="100%" size="2" id="contact">
 
           <div class="site-body-Contact">
             <p>Contact Me!</p>
-          <form action="send_email.php" method="POST" class="contact-form">
+          <form id="contactForm" action="send_email.php" method="POST" class="contact-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             
@@ -121,7 +187,7 @@
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
             
-            <button type="submit" disabled="true">Not available right now, Contact me arne.olemans@outlook.com</button>
+            <button type="submit">Send message!</button>
           </form>
         </div>
       </div>
