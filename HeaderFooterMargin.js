@@ -22,4 +22,5 @@ function adjustBodyMargins() {
         img.style.height = `${footerHeight/footerDivider}px`;
         img.style.width = 'auto';
     });
+
 }
