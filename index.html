@@ -8,26 +8,27 @@
     <script src="script.js" defer></script>
     <script src="HeaderFooterMargin.js" defer></script>
     <script src="emailSubmit.js" defer></script>
+    <script src="highlightActiveLink.js" defer></script>
     <title>Portfolio</title>
 </head>
-<body>
+<body class="site-section">
     <div class="header">
-        <ul class="header-links">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#about">ABOUT ME</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-        </ul>
+      <ul class="header-links">
+          <li><a href="#home" class="nav-link">HOME</a></li>
+          <li><a href="#about" class="nav-link">ABOUT ME</a></li>
+          <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+          <li><a href="#contact" class="nav-link">CONTACT</a></li>
+      </ul>
     </div>
 
     <div class="site-body">
 
-        <div class="site-body-Intro">
+        <div class="site-body-Intro" id="home">
           <h1>ARNE OLEMANS</h1>
           <img src="images/BigPF_Pic.jpg" alt="">
         </div>
 
-        <div class="site-body-AboutMe" id="about">
+        <div class="site-body-AboutMe site-section" id="about">
           <p>I am Arne Olemans, I always dreamed of world domination, but my mother refused to fund those dreams. So a become a <b>curious</b> and <b>driven</b> individual with a lifelong passion for exploring technology and the world around me. From a young age, I've been fascinated by <b>software</b> and <b>technology</b>, starting with my early days of tinkering with Nintendo games and desktop PCs. This curiosity has fueled my journey into understanding and creating within the software developent with a special intrest in the <b>Game Development</b> industry.</p>
           <div class="button-container">
             <a href="CV/CV-Arne_Olemans.pdf" target="_blank">
@@ -38,7 +39,7 @@
           </div>
         </div>
 
-        <hr width="100%" size="2" id="projects">
+        <hr width="100%" size="2" class="site-section" id="projects">
 
         <div class="site-body-Projects">
             <ul class="projects-Title">
@@ -162,7 +163,7 @@
               </div>
             </a>
           </div>
-          <div class="project-responsive">
+          <div class="project-responsive site-section">
             <div class="project">
               <a href="https://github.com/KnipTang/DirectX_Rasterizer" target="_blank">
                 <img src="images/Projects/Project_DirectX.jpg" alt="Cinque Terre" width="600" height="400">

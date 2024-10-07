@@ -60,8 +60,12 @@ body{
     padding: 0px 50px;
 }
 
+/* Highlighted active state */
+.header-links a.active {
+    color: #d86a15;  /* Highlight color */
+    border-bottom: none;  /* Optional underline to signify active section */
 
-
+}
 
 
 
