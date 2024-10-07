@@ -365,7 +365,6 @@ div.desc {
     float: left;
 }
   
-
 .projectBig-desc {
     width: auto; /* 60% of the container */
     /*display: flex;*/
@@ -377,14 +376,16 @@ div.desc {
     position: relative; /* Relative positioning for absolute child placement */
     height: 100%; /* Adjust this if necessary */
     min-height: 300px; /* Optional: Set a minimum height for the container */
-
+    
     font-size: larger;
-
+    
     flex-wrap: wrap;
-
+    
     overflow-x:hidden;   /* Enables horizontal scrolling */
     overflow-y: auto;   /* Enables vertical scrolling only when necessary */
-    padding: 0rem 2rem 0 0rem;
+    
+    right: 0.25rem;
+    margin-left: 0.25rem;
 }
 
 .projectBig-desc img {
@@ -513,6 +514,11 @@ ul
     margin: 0;
 }
 
+/* Scrollbar for Firefox */
+* {
+    scrollbar-width: thin; /* Thin scrollbar in Firefox */
+    scrollbar-color: rgb(216, 173, 127) rgb(242, 232, 222); /* Thumb and track color */
+}
 
 
 
