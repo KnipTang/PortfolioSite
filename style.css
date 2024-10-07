@@ -375,7 +375,7 @@ div.desc {
     text-align: left; /* Ensure text is left-aligned */
     position: relative; /* Relative positioning for absolute child placement */
     height: 100%; /* Adjust this if necessary */
-    min-height: 300px; /* Optional: Set a minimum height for the container */
+    /* min-height: 300px; Optional: Set a minimum height for the container */
     
     font-size: larger;
     
@@ -629,12 +629,17 @@ ul
         font-size: medium;
     }
     
+    
     .project-responsive {
         width: 100%;
     }
 
+    .project-big {
+        height: 10rem; 
+    }
+    
     .projectBig-desc {
-        font-size: small;
+        font-size: smaller;
     }
 
     .projectBig-desc img {
@@ -643,7 +648,7 @@ ul
     }
 
     .projectBig-Title{
-        font-size: medium;
+        font-size: small;
     }
 }
 
@@ -686,8 +691,12 @@ ul
         width: 100%;
     }
 
+    .project-big {
+        height: 15rem; 
+    }
+
     .projectBig-desc {
-        font-size: medium;
+        font-size: small;
     }
 
     .projectBig-desc img {
@@ -696,7 +705,7 @@ ul
     }
 
     .projectBig-Title{
-        font-size: large;
+        font-size: medium;
     }
 }
 
@@ -738,9 +747,11 @@ ul
     .project-responsive {
         width: 50%;
     }
-
+    .project-big {
+        height: 20rem; 
+    }
     .projectBig-desc {
-        font-size: large;
+        font-size: medium;
     }
 
     .projectBig-desc img {
@@ -749,7 +760,7 @@ ul
     }
 
     .projectBig-Title{
-        font-size: larger;
+        font-size: large;
     }
 }
 
@@ -791,7 +802,9 @@ ul
     .project-responsive {
         width: 33.333333%;
     }
-
+    .project-big {
+        height: 25rem; 
+    }
     .projectBig-desc {
         font-size: large;
     }
@@ -844,7 +857,9 @@ ul
     .project-responsive {
         width: 24.99999%;
     }
-
+    .project-big {
+        height: 35rem; 
+    }
     .projectBig-desc {
         font-size: larger;
     }
