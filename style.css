@@ -521,7 +521,7 @@ ul
 /* Scrollbar for Firefox */
 * {
     scrollbar-width: thin; /* Thin scrollbar in Firefox */
-    scrollbar-color: rgb(216, 173, 127) rgb(242, 232, 222); /* Thumb and track color */
+    scrollbar-color: rgb(211, 189, 166) rgb(242, 232, 222); /* Thumb and track color */
 }
 
 
@@ -633,22 +633,51 @@ ul
         font-size: medium;
     }
     
-    
+    .projects{
+        gap: 1rem;
+    }
+
+    div.project {
+        height: 300px;
+    }
+
+    div.desc{
+        font-size: 0.8rem;
+    }
+
     .project-responsive {
         width: 100%;
     }
 
     .project-big {
-        height: 10rem; 
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center children vertically */
+        align-items: center; /* Center children horizontally */
+        height: auto; /* Allow height to adjust based on content */
+       
+        padding: 1rem;
+        gap: 1rem;
+
     }
     
     .projectBig-desc {
         font-size: smaller;
+        width: 100%; /* Allow description to take full width */
+        text-align: center; /* Center text for better appearance */
     }
 
     .projectBig-desc img {
         width: auto;
         height: 3rem;
+
+    }
+
+
+    .projectBig-main {
+        justify-content: center; /* Center the image vertically */
+        align-items: center; /* Center the image horizontally */
+        padding: 0;
     }
 
     .projectBig-Title{
