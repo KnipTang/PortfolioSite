@@ -410,7 +410,12 @@ div.desc {
     font-size: x-large;
 }
 
-
+.project-arrow{
+    /* display: none; */
+    position: absolute;
+    color: #d86a15;
+    font-size: x-large;
+}
 
 /* contact-form */
 
@@ -461,15 +466,6 @@ div.desc {
 .contact-form button:hover {
   background-color: #d86a15;
 }
-
-.scroll-arrow{
-    position: absolute;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 
 
@@ -566,33 +562,6 @@ ul
 
 
 
-
-.form-popup
-{
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    height: 90%;
-    max-width: 90%; /* Ensure it doesn't overflow on smaller screens */
-    max-height: 90%; /* Ensure it doesn't overflow vertically */
-    z-index: 1000;
-
-    border-radius: 30px;
-
-    justify-content: center;
-    align-items: center;
-
-    background-color: #777;
-}
-
-
-
-
-
-
 @media (max-width: 600px) {
     .header, .footer
     {
@@ -670,6 +639,10 @@ ul
 
     .projectBig-Title{
         font-size: small;
+    }
+
+    .project-arrow{
+        display: none;
     }
 }
 
