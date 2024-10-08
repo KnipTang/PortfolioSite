@@ -147,7 +147,7 @@ body{
 
 .site-body img{
     max-width: 100%;
-    height: auto;
+    /* height: auto; */
 }
 
 
@@ -322,13 +322,6 @@ div.desc {
     height: 35rem; /* Set a fixed height for all project containers */
 }
 
-.project-big img{
-    border-radius: 15px; /* Rounds the top corners of the image to match the project container */
-    max-width: 100%; /* Ensures the image is responsive */
-    height: auto; /* Allows height to adjust based on width */
-
-}
-
 .projectBig-main {
     display: flex;
     flex-direction: column;
@@ -355,6 +348,8 @@ div.desc {
 .projectBig-main img{
     height: 100%;
     width: auto;
+    border-radius: 15px; /* Rounds the top corners of the image to match the project container */
+    max-width: 100%; /* Ensures the image is responsive */
 }
 
 .projectBig-main-one{
@@ -390,19 +385,6 @@ div.desc {
     
     right: 0.25rem;
     margin-left: 0.25rem;
-}
-
-.projectBig-desc img {
-    width: auto;
-    height: 15rem; /* Set image height */
-    /*position: absolute; /* Absolute positioning for precise placement */
-    /*right: 0; /* Align image to the right */
-    /* bottom: 0; */
-    /* padding-left: 1rem; */
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-
-    border-radius: 15px; /* Rounds the top corners of the image to match the project container */
 }
 
 .projectBig-desc a{
@@ -480,7 +462,13 @@ div.desc {
   background-color: #d86a15;
 }
 
+/* .scroll-arrow{
+    position: absolute;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 
 
@@ -520,10 +508,16 @@ ul
 
 /* Scrollbar for Firefox */
 * {
-    scrollbar-width: thin; /* Thin scrollbar in Firefox */
+    scrollbar-width: auto; /* Thin scrollbar in Firefox */
     scrollbar-color: rgb(211, 189, 166) rgb(242, 232, 222); /* Thumb and track color */
 }
 
+.text-symbols{
+    display:inline-block;
+    height:1em; 
+    width:auto; 
+    transform:translate(0, 0.1em)
+}
 
 
 
@@ -667,12 +661,6 @@ ul
         text-align: center; /* Center text for better appearance */
     }
 
-    .projectBig-desc img {
-        width: auto;
-        height: 3rem;
-
-    }
-
 
     .projectBig-main {
         justify-content: center; /* Center the image vertically */
@@ -732,11 +720,6 @@ ul
         font-size: small;
     }
 
-    .projectBig-desc img {
-        width: auto;
-        height: 5rem;
-    }
-
     .projectBig-Title{
         font-size: medium;
     }
@@ -787,11 +770,6 @@ ul
         font-size: medium;
     }
 
-    .projectBig-desc img {
-        width: auto;
-        height: 7rem;
-    }
-
     .projectBig-Title{
         font-size: large;
     }
@@ -840,11 +818,6 @@ ul
     }
     .projectBig-desc {
         font-size: large;
-    }
-
-    .projectBig-desc img {
-        width: auto;
-        height: 10rem;
     }
 
     .projectBig-Title{

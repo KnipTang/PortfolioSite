@@ -5,11 +5,14 @@ require 'vendor/autoload.php';  // Include the Composer autoload file
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-
 // Load SMTP configuration
 $config = require '/var/www/arneolemans.com/config.php';
 
 header('Content-Type: application/json');
+
+ini_set('display_errors', 0); 
+ini_set('log_errors', 1); 
+ini_set('error_log', '/var/log/php_errors.log'); // Update with your log file path
 
 $response = ['success' => false, 'error' => ''];
 
@@ -28,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail = new PHPMailer(true);
 
     try {
-        //Server settings
+        // Server settings
         $mail->isSMTP();
         $mail->Host       = 'smtp.office365.com';
         $mail->SMTPAuth   = true;
@@ -36,8 +39,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Password   = $config['smtp_password'];  // Load password from config file
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
+        // Uncomment for detailed debug output during development
+         $mail->SMTPDebug = 2; // Set this for detailed debug output
 
-        //Recipients
+        // Recipients
         $mail->setFrom($ownerEmail, $name);
         $mail->addAddress($ownerEmail);  // Add a recipient
 
@@ -46,42 +51,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Subject = $subject;
         $mail->Body    = $bodyOwner;
 
-        // Send the email
+        // Send the owner email
         if ($mail->send()) {
-            echo "Message sent successfully!";
+            $response['success'] = true;
         } else {
-            echo "Failed to send the message. Please try again later.";
+            $response['error'] = "Failed to send the message to the owner.";
         }
 
-
-
-
-        // Client email //
-
-        // Clear all recipients and attachments
+        // Clear all recipients and attachments for the client email
         $mail->clearAddresses();
         $mail->clearAttachments();
 
-        // Recipients
-        //$mail->setFrom($ownerEmail, $name);
+        // Add client recipient
         $mail->addAddress($clientEmail);  // Add a recipient
 
-        // Content
-        $mail->isHTML(false);  // Set email format to plain text
+        // Content for client
         $mail->Subject = $subject;
         $mail->Body    = $bodyClient;
 
-        // Send the email
-        if ($mail->send()) {
-            echo "Message sent successfully!";
-        } else {
-            echo "Failed to send the message. Please try again later.";
+        // Send the client email
+        if (!$mail->send()) {
+            $response['error'] .= " Failed to send the message to the client.";
         }
     } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        $response['error'] = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
 }
 
+// Always return the response as JSON
 echo json_encode($response);
 
 ?>
