@@ -83,7 +83,12 @@ body{
     align-items: center;
     justify-content: center;
 
-    width: 20%;
+    width: fit-content;
+    padding-left: 2rem;
+    margin-bottom: 0.1rem;
+
+    overflow: visible; /* Change from hidden to visible */
+    white-space: nowrap;
 }
 
 .footer-Contact {
@@ -92,7 +97,7 @@ body{
     align-items: center;
     justify-content: center;
 
-    width: 60%;
+    width: fit-content;
     
     gap: 10%;
     white-space: nowrap;
@@ -523,6 +528,11 @@ ul
 
 /* cv-Button */
 
+.cv-container{
+    display:flex;
+    gap: 1rem;
+}
+
 .button-container {
     display: flex;
 }
@@ -572,7 +582,9 @@ ul
 
     .footer-CV
     {
-        width: 25%;
+        /* width: 25%; */
+        padding-left: 0.5rem;
+
     }
 
     .footer-Links
@@ -583,7 +595,7 @@ ul
     {
         flex-direction: column;
 
-        width: 50%;
+        /* width: 50%; */
     }
 
     .footer-Contact p
@@ -644,6 +656,10 @@ ul
     .project-arrow{
         display: none;
     }
+
+    .cv-UK{
+        display: none;
+    }
 }
 
 @media (min-width: 601px) {
@@ -656,7 +672,9 @@ ul
 
     .footer-CV
     {
-        width: 20%;
+        /* width: 20%; */
+        padding-left: 1rem;
+
     }
 
     .footer-Links
@@ -668,7 +686,8 @@ ul
     {
         flex-direction: row;
 
-        width: 60%;
+        /* width: 60%; */
+
     }
 
     .footer-Contact p
@@ -696,6 +715,10 @@ ul
     .projectBig-Title{
         font-size: medium;
     }
+
+    .cv-UK{
+        display: none;
+    }
 }
 
 @media (min-width: 768px) {
@@ -708,7 +731,9 @@ ul
 
     .footer-CV
     {
-        width: 20%;
+        /* width: 20%; */
+        padding-left: 2rem;
+
     }
 
     .footer-Links
@@ -720,7 +745,6 @@ ul
     {
         flex-direction: row;
 
-        width: 60%;
     }
 
     .footer-Contact p
@@ -746,6 +770,10 @@ ul
     .projectBig-Title{
         font-size: large;
     }
+
+    .cv-UK{
+        display: none;
+    }
 }
 
 @media (min-width: 992px) {
@@ -758,7 +786,7 @@ ul
 
     .footer-CV
     {
-        width: 20%;
+        /* width: 20%; */
     }
 
     .footer-Links
@@ -770,7 +798,7 @@ ul
     {
         flex-direction: row;
 
-        width: 60%;
+        /* width: 60%; */
     }
 
     .footer-Contact p
@@ -796,6 +824,10 @@ ul
     .projectBig-Title{
         font-size: larger;
     }
+
+    .cv-UK{
+        display: none;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -808,7 +840,7 @@ ul
 
     .footer-CV
     {
-        width: 20%;
+        /* width: 20%; */
     }
 
     .footer-Links
@@ -820,7 +852,7 @@ ul
     {
         flex-direction: row;
 
-        width: 60%;
+        /* width: 60%; */
     }
 
     .footer-Contact p
@@ -845,5 +877,9 @@ ul
 
     .projectBig-Title{
         font-size: x-large;
+    }
+
+    .cv-UK{
+        display: flex;
     }
 }

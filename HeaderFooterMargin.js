@@ -7,7 +7,9 @@ function adjustBodyMargins() {
 
     const siteBody = document.querySelector('.site-body');
     const footerLinksLinks = document.querySelectorAll('.footer-Links img.button-icon');
-    
+    const footerLinksButtons = document.querySelectorAll('.footer-CV .button-container button');
+
+
     siteBody.style.marginTop = `${headerHeight}px`;
     siteBody.style.marginBottom = `${footerHeight}px`;
 
@@ -23,4 +25,9 @@ function adjustBodyMargins() {
         img.style.width = 'auto';
     });
 
+
+
+    footerLinksButtons.forEach(img => {
+        img.style.height = `${footerHeight/1.1}px`;;
+    });
 }
