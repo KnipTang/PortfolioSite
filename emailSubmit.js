@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             method: 'POST',
             body: formData
         })
-        .then(response => response.json())
+        .then(response => {let peck = response.json(); console.log(peck); return peck; })
         .then(data => {
             if (data.success) {
                 responseMessage.textContent = 'Message sent successfully!';

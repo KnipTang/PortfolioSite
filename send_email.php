@@ -10,10 +10,6 @@ $config = require '/var/www/arneolemans.com/config.php';
 
 header('Content-Type: application/json');
 
-ini_set('display_errors', 0); 
-ini_set('log_errors', 1); 
-ini_set('error_log', '/var/log/php_errors.log'); // Update with your log file path
-
 $response = ['success' => false, 'error' => ''];
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -21,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $clientEmail = htmlspecialchars($_POST['email']);
     $message = htmlspecialchars($_POST['message']);
 
-    $ownerEmail = "arne.olemans@outlook.com";  // Replace with your email address
+    $ownerEmail = "CommunistKitchenE@gmail.com";  // Replace with your email address
     $subject = "New Contact Form Message";
 
     $bodyOwner = "Name: $name\nEmail: $clientEmail\n\nMessage:\n$message";
@@ -33,14 +29,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Server settings
         $mail->isSMTP();
-        $mail->Host       = 'smtp.office365.com';
+        $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
         $mail->Username   = $config['smtp_username'];  // Load username from config file
         $mail->Password   = $config['smtp_password'];  // Load password from config file
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
         // Uncomment for detailed debug output during development
-         $mail->SMTPDebug = 2; // Set this for detailed debug output
+        $mail->SMTPDebug = 2; // Set this for detailed debug output
 
         // Recipients
         $mail->setFrom($ownerEmail, $name);

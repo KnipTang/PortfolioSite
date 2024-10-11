@@ -461,8 +461,9 @@ div.desc {
 .contact-form button {
   margin-top: 15px;
   padding: 10px 20px;
-  background-color: #C0C0C0;;
-  color: #fff;
+  background-color: #535151;;
+  color: #dfdfdf;
+  font-weight: bold;
   border: none;
   border-radius: 5px;
   cursor: pointer;
