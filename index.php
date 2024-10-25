@@ -206,12 +206,6 @@ $_SESSION['form_loaded_time'] = time();
             <p>Contact Me!</p>
             
           <form id="contactForm" action="send_email.php" method="POST" class="contact-form">
-            <div>
-              <?php
-              echo 'Today’s date is <b>' . date('Y/m/d') . '</b> and it’s a <b>'.date('l').'</b> today!';
-              ?>
-              </div>
-            
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             
@@ -226,7 +220,7 @@ $_SESSION['form_loaded_time'] = time();
             
             <button type="submit" data-debug-message="Stop trying to enable it you fack head, dead is dead :pp">Send Message!</button>
           </form>
-          <!-- <div id="responseMessage"></div> -->
+         <!-- <div id="responseMessage"></div> -->
         </div>
       </div>
     </div>
