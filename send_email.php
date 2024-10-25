@@ -47,11 +47,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Subject = $subject;
         $mail->Body    = $bodyOwner;
 
-        // Send the owner email
-        if ($mail->send()) {
-            $response['success'] = true;
-        } else {
-            $response['error'] = "Failed to send the message to the owner.";
+        if (!empty($_POST['contact_honeypot'])) {
+            die('Spam detected!');
+        }
+        else
+        {
+            // Send the owner email
+            if ($mail->send()) {
+                $response['success'] = true;
+            } else {
+                $response['error'] = "Failed to send the message to the owner.";
+            }
         }
 
         // Clear all recipients and attachments for the client email
