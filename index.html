@@ -12,6 +12,10 @@
     <title>Portfolio</title>
 </head>
 <body class="site-section">
+  <?php
+session_start();
+$_SESSION['form_loaded_time'] = time();
+?>
     <div class="header">
       <ul class="header-links">
           <li><a href="#home" class="nav-link">ARNE OLEMANS</a></li>

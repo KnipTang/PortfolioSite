@@ -5,6 +5,9 @@ require 'vendor/autoload.php';  // Include the Composer autoload file
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+session_start();
+$_SESSION['form_loaded_time'] = time();
+
 // Load SMTP configuration
 $config = require '/var/www/arneolemans.com/config.php';
 
@@ -12,18 +15,28 @@ header('Content-Type: application/json');
 
 $response = ['success' => false, 'error' => ''];
 
+session_start();
+    if (!empty($_POST['contact_honeypot'])) {
+        die('Spam detected!');  // Bot detected, exit script
+    }
+
+    // Time-based submission check
+    if (!isset($_SESSION['form_loaded_time'])) {
+        die('Spam detected!');  // If form_loaded_time doesn't exist, exit script
+    }
+
+    $time_taken = time() /*- $_SESSION['form_loaded_time']*/;
+    if ($time_taken < 30) {
+        die('Spam detected!');  // Form submitted too quickly, likely a bot
+    }
+
+    // Reset form load time to prevent reuse in future submissions
+    unset($_SESSION['form_loaded_time']);
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name']);
     $clientEmail = htmlspecialchars($_POST['email']);
     $message = htmlspecialchars($_POST['message']);
-
-    session_start();
-if (isset($_POST['submit'])) {
-    $time_taken = time() - $_SESSION['form_loaded_time'];
-    if ($time_taken < 5) {
-        exit('Bot detected!');
-    }
-}
 
     $ownerEmail = "CommunistKitchenE@gmail.com";  // Replace with your email address
     $subject = "New Contact Form Message";
