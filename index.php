@@ -1,3 +1,8 @@
+<!-- <?php
+session_start();
+$_SESSION['form_loaded_time'] = time();
+?> -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +17,6 @@
     <title>Portfolio</title>
 </head>
 <body class="site-section">
-  <?php
-session_start();
-$_SESSION['form_loaded_time'] = time();
-?>
     <div class="header">
       <ul class="header-links">
           <li><a href="#home" class="nav-link">ARNE OLEMANS</a></li>
@@ -203,7 +204,14 @@ $_SESSION['form_loaded_time'] = time();
 
           <div class="site-body-Contact">
             <p>Contact Me!</p>
+            
           <form id="contactForm" action="send_email.php" method="POST" class="contact-form">
+            <div>
+              <?php
+              echo 'Today’s date is <b>' . date('Y/m/d') . '</b> and it’s a <b>'.date('l').'</b> today!';
+              ?>
+              </div>
+            
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             

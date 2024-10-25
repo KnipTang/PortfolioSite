@@ -1,12 +1,11 @@
 <?php
-
+session_start();
 require 'vendor/autoload.php';  // Include the Composer autoload file
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-session_start();
-$_SESSION['form_loaded_time'] = time();
+
 
 // Load SMTP configuration
 $config = require '/var/www/arneolemans.com/config.php';
@@ -15,25 +14,30 @@ header('Content-Type: application/json');
 
 $response = ['success' => false, 'error' => ''];
 
-session_start();
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
     if (!empty($_POST['contact_honeypot'])) {
-        die('Spam detected!');  // Bot detected, exit script
+        die('Spam detected!Honey');  // Bot detected, exit script
     }
 
     // Time-based submission check
     if (!isset($_SESSION['form_loaded_time'])) {
-        die('Spam detected!');  // If form_loaded_time doesn't exist, exit script
+        die('Spam detectedIsset!');  // If form_loaded_time doesn't exist, exit script
     }
 
-    $time_taken = time() /*- $_SESSION['form_loaded_time']*/;
-    if ($time_taken < 30) {
-        die('Spam detected!');  // Form submitted too quickly, likely a bot
+    $ses = $_SESSION["form_loaded_time"];
+    $time_taken = time() - $_SESSION['form_loaded_time'];
+    $ttime = time();
+    if ($time_taken < 10) {
+        $response['error'] = 'Spam detected! Time taken: ' . $time_taken . ', ses: ' . $ses . ', ttime: ' . $ttime;
+        echo json_encode($response); // Return as JSON
+        exit; // Exit after sending response    
     }
+
 
     // Reset form load time to prevent reuse in future submissions
     unset($_SESSION['form_loaded_time']);
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name']);
     $clientEmail = htmlspecialchars($_POST['email']);
     $message = htmlspecialchars($_POST['message']);
@@ -102,6 +106,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 // Always return the response as JSON
-echo json_encode($response);
+ echo json_encode($response);
 
 ?>
