@@ -28,6 +28,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $ses = $_SESSION["form_loaded_time"];
     $time_taken = time() - $_SESSION['form_loaded_time'];
     $ttime = time();
+    $response['error'] = 'Spam detected! Time taken: ' . $time_taken . ', ses: ' . $ses . ', ttime: ' . $ttime;
+    echo json_encode($response); // Return as JSON
     if ($time_taken < 10) {
         $response['error'] = 'Spam detected! Time taken: ' . $time_taken . ', ses: ' . $ses . ', ttime: ' . $ttime;
         echo json_encode($response); // Return as JSON
