@@ -17,6 +17,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $clientEmail = htmlspecialchars($_POST['email']);
     $message = htmlspecialchars($_POST['message']);
 
+    session_start();
+if (isset($_POST['submit'])) {
+    $time_taken = time() - $_SESSION['form_loaded_time'];
+    if ($time_taken < 5) {
+        exit('Bot detected!');
+    }
+}
+
     $ownerEmail = "CommunistKitchenE@gmail.com";  // Replace with your email address
     $subject = "New Contact Form Message";
 
