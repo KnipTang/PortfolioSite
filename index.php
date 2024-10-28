@@ -14,6 +14,7 @@ $_SESSION['form_loaded_time'] = time();
     <script src="emailSubmit.js" defer></script>
     <script src="highlightActiveLink.js" defer></script>
     <script src="scollArrowDesc.js" defer></script>
+    <script src="restartGIF.js" defer></script>
     <title>Portfolio</title>
 </head>
 <body class="site-section">
@@ -97,7 +98,7 @@ $_SESSION['form_loaded_time'] = time();
               </div>
               <div class="project-big">
                 <div class="projectBig-main projectBig-main-two">
-                  <img src="images/Projects/FlappyBird_Gif.gif" alt="Cinque Terre" width="600" height="400">
+                  <img src="images/Projects/FlappyBird_Gif.gif" id="FlappyBird-gif" alt="Cinque Terre" width="600" height="400">
                   <a href="https://github.com/KnipTang/FlappyBird-Genetic_Algorithm" target="_blank" class="clickable-overlay"></a>
                 </div>
                 <div class="projectBig-desc projectBig-desc-Second">
@@ -122,10 +123,11 @@ $_SESSION['form_loaded_time'] = time();
               <div class="project-big">
                 <div class="projectBig-main projectBig-main-one">
                   <img src="images/Projects/Project_FormFrenzy.jpg" alt="Cinque Terre" width="600" height="400">
-                  <a href="https://lars-maes.itch.io/group06project" target="_blank" class="clickable-overlay"></a>
+                  <!-- <iframe width="600" height="400" id="project-video" src="https://www.youtube.com/embed/i8GtI_XY5JU" title="Form Frenzy Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                  <!-- <a href="https://lars-maes.itch.io/group06project" target="_blank" class="clickable-overlay"></a> -->
                 </div>
                 <div class="projectBig-desc">
-                  <div class="projectBig-Title"><b>Form Frenzy</b> - Two-Player Party Co-Op form matcher - Unity <img class="text-symbols" src="Symboles/unity-brands-solid.svg" alt=""> | <b id="project-type">Team Project</b></div>
+                  <div class="projectBig-Title"><b>Form Frenzy</b> - Two-Player Party Co-Op form matcher - Programmer & Game Designer - Unity <img class="text-symbols" src="Symboles/unity-brands-solid.svg" alt=""> | <b id="project-type">Team Project</b></div>
                   <br>
                   Form Frenzy… The first project I would develop in a group setting.
                   <br>
