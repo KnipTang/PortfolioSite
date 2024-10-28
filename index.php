@@ -70,7 +70,7 @@ $_SESSION['form_loaded_time'] = time();
                   <a href="https://github.com/KnipTang/KnipTang-Engine" target="_blank" class="clickable-overlay"></a>
                 </div>
                   <div class="projectBig-desc">
-                    <div class="projectBig-Title"><b>KnipTang-Engine</b> - Custom C++ Game-Engine</div>
+                    <div class="projectBig-Title"><b>KnipTang-Engine</b> - Custom C++ Game-Engine | <b id="project-type">Solo Project</b></div>
                     <br>
                     The first game engine I ever made from scratch.
                     <br>
@@ -102,7 +102,7 @@ $_SESSION['form_loaded_time'] = time();
                 </div>
                 <div class="projectBig-desc projectBig-desc-Second">
                   <!-- <img class="float-right" src="images/Projects/FlappyBird_Gif.gif" alt="flappy bird genertic algorithm gif"> -->
-                  <div class="projectBig-Title"><b>A genetic algorithm</b> that can perfectly play the mobile game <b>Flappy Bird</b></div>
+                  <div class="projectBig-Title"><b>A genetic algorithm</b> perfectly plays the mobile game Flappy Bird with a <b>Neural Network</b> | <b id="project-type">Solo Project</b></div>
                     <br>
                     This project was my introduction to neural network programming. 
                     <br>
@@ -125,7 +125,7 @@ $_SESSION['form_loaded_time'] = time();
                   <a href="https://lars-maes.itch.io/group06project" target="_blank" class="clickable-overlay"></a>
                 </div>
                 <div class="projectBig-desc">
-                  <div class="projectBig-Title"><b>Form Frenzy</b> - Two-Player Party Co-Op form matcher - Group Project - <b>Lead Programmer</b> - Unity <img class="text-symbols" src="Symboles/unity-brands-solid.svg" alt=""></div>
+                  <div class="projectBig-Title"><b>Form Frenzy</b> - Two-Player Party Co-Op form matcher - Unity <img class="text-symbols" src="Symboles/unity-brands-solid.svg" alt=""> | <b id="project-type">Team Project</b></div>
                   <br>
                   Form Frenzy… The first project I would develop in a group setting.
                   <br>
@@ -149,7 +149,7 @@ $_SESSION['form_loaded_time'] = time();
                 <div class="project">
                   <a href="https://github.com/KnipTang/Vulkan-2D_Engine" target="_blank">
                     <img src="images/Projects/Project_Vulkan.jpg" alt="Cinque Terre" width="600" height="400">
-                  <div class="desc">2D <b>Vulkan</b> Engine</div>
+                  <div class="desc">2D <b>Vulkan</b> Engine <br><b id="project-type">Solo Project</b></div>
                 </div>
                 </a>
               </div>
@@ -158,7 +158,7 @@ $_SESSION['form_loaded_time'] = time();
                 <div class="project">
                   <a href="https://kniptang.itch.io/ride-of-giri" target="_blank">
                     <img src="images/Projects/Project_RideOfGiri.jpg" alt="Cinque Terre" width="600" height="400">
-                  <div class="desc"><b>Ride Of Giri</b> - Unwrap group GameJam project</div>
+                  <div class="desc"><b>Ride Of Giri</b> - Unwrap group GameJam project <br><b id="project-type">Team Project</b></div>
                 </div>
                 </a>
               </div>
@@ -166,7 +166,7 @@ $_SESSION['form_loaded_time'] = time();
                 <div class="project">
                   <a href="https://github.com/KnipTang/Webcam_Face_Detection_Blur" target="_blank">
                     <img src="images/Projects/Project_OpenCV.jpg" alt="Cinque Terre" width="600" height="400">
-                  <div class="desc"><b>BlurMePls</b> In-Real-Time webcam face detection blur - <b>OpenCV</b></div>
+                  <div class="desc"><b>BlurMePls</b> In-Real-Time webcam face detection blur - <b>OpenCV</b> <br><b id="project-type">Solo Project</b></div>
                 </div>
                 </a>
               </div>
@@ -174,7 +174,7 @@ $_SESSION['form_loaded_time'] = time();
                 <div class="project">
                   <a href="https://github.com/KnipTang/GameEngine_Pengo" target="_blank">
                     <img src="images/Projects/Project_Pengo.jpg" alt="Cinque Terre" width="600" height="400">
-                  <div class="desc"><b>Pengo SEGA 1982</b> - Remake of Pengo made in my own Game-Engine(KnipTang-Engine)</div>
+                  <div class="desc"><b>Pengo SEGA 1982</b> - Remake of Pengo made in my own Game-Engine(KnipTang-Engine) <br><b id="project-type">Solo Project</b></div>
                 </div>
                 </a>
               </div>
@@ -182,7 +182,7 @@ $_SESSION['form_loaded_time'] = time();
                 <div class="project">
                   <a href="https://github.com/KnipTang/ReVengine" target="_blank">
                     <img src="images/Projects/Project_ReVengine.jpg" alt="Cinque Terre" width="600" height="400">
-                  <div class="desc"><b>ReVengine</b> - fps focussed DirectX11 C++ custom game-engine <br><i><b>Work in Progress</b></i></div>
+                  <div class="desc"><b>ReVengine</b> - FPS focussed DirectX11 C++ custom Game-Engine <br><i><b>Work in Progress</b></i> <br><b id="project-type">Solo Project</b></div>
                 </div>
                 </a>
               </div>

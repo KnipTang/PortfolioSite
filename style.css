@@ -286,6 +286,12 @@ div.project img {
     border-radius: 15px 15px 0 0; /* Rounds the top corners of the image to match the project container */
 }
 
+#project-type
+{
+    color: #464646;
+    font-style: italic;
+}
+
 div.desc {
     align-items: center;
     justify-content: center;
