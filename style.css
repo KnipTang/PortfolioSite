@@ -366,7 +366,7 @@ div.desc {
     text-indent: -9999px; /* Hide the text inside the anchor tag */
 }
 
-.projectBig-main img{
+.projectBig-img{
     height: 100%;
     width: auto;
     border-radius: 15px; /* Rounds the top corners of the image to match the project container */
@@ -447,6 +447,9 @@ div.desc {
 }
 
 .projectBig-Title{
+    min-width: 20%;
+    /* display: block; */
+
     font-size: x-large;
 }
 
@@ -455,6 +458,11 @@ div.desc {
     position: absolute;
     color: #d86a15;
     font-size: x-large;
+}
+
+.project-github-icon{
+    width: 1rem;
+    height: auto;
 }
 
 /* contact-form */
@@ -685,7 +693,7 @@ ul
         padding: 0;
     }
 
-    .projectBig-main img {
+    .projectBig-img {
         width: 100%;
         height: auto;
     }
@@ -746,15 +754,17 @@ ul
     }
 
     .project-big {
-        height: 15rem; 
+        height: 10rem; 
+        padding: 20px;
     }
 
     .projectBig-desc {
-        font-size: small;
+        font-size: smaller;
+        gap: 0.1rem;
     }
 
     .projectBig-Title{
-        font-size: medium;
+        font-size: small;
     }
 
     .cv-UK{
@@ -802,14 +812,16 @@ ul
         width: 50%;
     }
     .project-big {
-        height: 20rem; 
+        height: 15rem; 
+        padding: 20px;
     }
     .projectBig-desc {
-        font-size: medium;
+        font-size: small;
+        gap: 0.2rem;
     }
 
     .projectBig-Title{
-        font-size: large;
+        font-size: medium;
     }
 
     .cv-UK{
@@ -856,14 +868,16 @@ ul
         width: 33.333333%;
     }
     .project-big {
-        height: 25rem; 
+        height: 20rem; 
+        padding: 32px;
     }
     .projectBig-desc {
-        font-size: large;
+        font-size: medium;
+        gap: 0.5rem;
     }
 
     .projectBig-Title{
-        font-size: larger;
+        font-size: large;
     }
 
     .cv-UK{
@@ -910,14 +924,14 @@ ul
         width: 24.99999%;
     }
     .project-big {
-        height: 35rem; 
+        height: 30rem; 
     }
     .projectBig-desc {
-        font-size: larger;
+        font-size: large;
     }
 
     .projectBig-Title{
-        font-size: x-large;
+        font-size: larger;
     }
 
     .cv-UK{
