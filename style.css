@@ -371,6 +371,7 @@ div.desc {
     width: auto;
     border-radius: 15px; /* Rounds the top corners of the image to match the project container */
     max-width: 100%; /* Ensures the image is responsive */
+    display: block
 }
 
 .projectBig-main-one{
@@ -380,7 +381,7 @@ div.desc {
 }
 
 .projectBig-main-two{
-    padding: 0rem 2rem 0 0;
+    /* padding: 0rem 2rem 0 0; */
     align-items: flex-start;
     float: left;
 }
@@ -407,6 +408,11 @@ div.desc {
     margin-left: 0.25rem;
 
     overflow: hidden;
+}
+
+.projectBig-desc-Second
+{
+    padding: 0rem 0rem 0 2rem;
 }
 
 .projectBig-desc a{
@@ -461,8 +467,23 @@ div.desc {
 }
 
 .project-github-icon{
-    width: 1rem;
+    width: 3rem;
     height: auto;
+    position: absolute;
+    bottom: 0.5rem; /* Slight padding from the bottom edge */
+    z-index: 20;
+}
+
+.project-github-icon-left{
+    left: 0.5rem;
+}
+
+.project-github-icon-right{
+    right: 0.5rem;
+}
+
+.project-github-icon:hover {
+    filter: brightness(0) saturate(100%) invert(65%) sepia(96%) saturate(3985%) hue-rotate(356deg) brightness(102%) contrast(105%);
 }
 
 /* contact-form */
@@ -767,6 +788,10 @@ ul
         font-size: small;
     }
 
+    .project-github-icon{
+        width: 2rem;
+    }
+
     .cv-UK{
         display: none;
     }
@@ -822,6 +847,10 @@ ul
 
     .projectBig-Title{
         font-size: medium;
+    }
+
+    .project-github-icon{
+        width: 3rem;
     }
 
     .cv-UK{
@@ -932,6 +961,10 @@ ul
 
     .projectBig-Title{
         font-size: larger;
+    }
+
+    .project-github-icon{
+        width: 3rem;
     }
 
     .cv-UK{

@@ -70,7 +70,7 @@ $_SESSION['form_loaded_time'] = time();
                 <div class="projectBig-main projectBig-main-one">
                   <img src="images/Projects/Project_GameEngine.jpg" alt="Cinque Terre" class="projectBig-img" width="600" height="400">
                   <a href="https://github.com/KnipTang/KnipTang-Engine" target="_blank" class="clickable-overlay"></a>
-                  <img src="Symboles/SymbGitHub.png" alt="Symbol" class="project-github-icon">
+                  <a href="https://github.com/KnipTang/KnipTang-Engine" target="_blank"><img src="Symboles/SymbGitHub.png" alt="Symbol" class="project-github-icon project-github-icon-left"></a>
                 </div>
                   <div class="projectBig-desc">
                     <div class="projectBig-Title"><b>KnipTang-Engine</b> - Custom C++ Game-Engine | <b id="project-type">Solo Project</b></div>
@@ -104,6 +104,7 @@ $_SESSION['form_loaded_time'] = time();
                 <div class="projectBig-main projectBig-main-two">
                   <img src="images/Projects/FlappyBird_Gif.gif" id="FlappyBird-gif" class="projectBig-img" alt="Cinque Terre" width="600" height="400">
                   <a href="https://github.com/KnipTang/FlappyBird-Genetic_Algorithm" target="_blank" class="clickable-overlay"></a>
+                  <a href="https://github.com/KnipTang/KnipTang-Engine" target="_blank"><img src="Symboles/SymbGitHub.png" alt="Symbol" class="project-github-icon project-github-icon-right"></a>
                 </div>
                 <div class="projectBig-desc projectBig-desc-Second">
                   <!-- <img class="float-right" src="images/Projects/FlappyBird_Gif.gif" alt="flappy bird genertic algorithm gif"> -->
@@ -129,8 +130,9 @@ $_SESSION['form_loaded_time'] = time();
               <div class="project-big">
                 <div class="projectBig-main projectBig-main-one">
                   <img src="images/Projects/Project_FormFrenzy.jpg" alt="Cinque Terre" class="projectBig-img" width="600" height="400">
+                  <a href="https://lars-maes.itch.io/group06project" target="_blank" class="clickable-overlay"></a>
+                  <a href="https://github.com/KnipTang/KnipTang-Engine" target="_blank"><img src="Symboles/SymbGitHub.png" alt="Symbol" class="project-github-icon project-github-icon-left"></a>
                   <!-- <iframe width="600" height="400" id="project-video" src="https://www.youtube.com/embed/i8GtI_XY5JU" title="Form Frenzy Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                  <!-- <a href="https://lars-maes.itch.io/group06project" target="_blank" class="clickable-overlay"></a> -->
                 </div>
                 <div class="projectBig-desc">
                   <div class="projectBig-Title"><b>Form Frenzy</b> - Two-Player Party Co-Op form matcher - Programmer & Game Designer - Unity <img class="text-symbols" src="Symboles/unity-brands-solid.svg" alt=""> | <b id="project-type">Team Project</b></div>
