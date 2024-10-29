@@ -389,6 +389,7 @@ div.desc {
     width: auto; /* 60% of the container */
     /*display: flex;*/
     flex-grow: 1;
+    display: flex;
     flex-direction: column; /* Stack content vertically */
     justify-content: flex-start; /* Align text to the top */
     align-items: flex-start; /* Align text to the left */
@@ -399,17 +400,35 @@ div.desc {
     
     font-size: larger;
     
-    flex-wrap: wrap;
-    
-    overflow-x:hidden;   /* Enables horizontal scrolling */
-    overflow-y: auto;   /* Enables vertical scrolling only when necessary */
+    /* flex-wrap: wrap; */
+    gap: 0.5rem;
     
     right: 0.25rem;
     margin-left: 0.25rem;
+
+    overflow: hidden;
 }
 
 .projectBig-desc a{
     color: cornflowerblue;
+}
+
+.projectBig-Text {
+    width: auto; /* 60% of the container */
+    /*display: flex;*/
+    flex-grow: 1;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: flex-start; /* Align text to the top */
+    align-items: flex-start; /* Align text to the left */
+    text-align: left; /* Ensure text is left-aligned */
+    position: relative; /* Relative positioning for absolute child placement */
+    /* height: 88%; Adjust this if necessary */
+    overflow-x:hidden;   /* Enables horizontal scrolling */
+    overflow-y: auto;   /* Enables vertical scrolling only when necessary */
+    flex-wrap: wrap;
+    
+    right: 0.25rem;
+    margin-left: 0.25rem;
 }
 
 .float-right:before{

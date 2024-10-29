@@ -1,4 +1,4 @@
-const descriptions = document.querySelectorAll('.projectBig-desc');
+const descriptions = document.querySelectorAll('.projectBig-Text');
 const arrows = document.querySelectorAll('.project-arrow');
 
 function isScrollAtEnd(desc) {

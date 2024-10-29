@@ -72,27 +72,29 @@ $_SESSION['form_loaded_time'] = time();
                 </div>
                   <div class="projectBig-desc">
                     <div class="projectBig-Title"><b>KnipTang-Engine</b> - Custom C++ Game-Engine | <b id="project-type">Solo Project</b></div>
-                    <br>
-                    The first game engine I ever made from scratch.
-                    <br>
-                    <br>
-                    The creation of this game engine took my engineering, C++, and programming skills to a whole new level.                    
-                    <br>
-                    <br>
-                    I learned so much about all kinds of different technical fields and concepts. It opened the world of all varying kinds of gameplay patterns and which ones are best to use in what situations and others you should better avoid.                    
-                    <br>
-                    <br>
-                    All the different techniques on how you could optimize and be capable of rendering and controlling all sorts of massive infastructors within your applications. Those patterns refueled the passion I had for programming, in the same way excitement I had when I first started out programming.
-                    Besides that, this project also taught me the crucial importance of good coding habits and practices, when working with a large code base that will keep increasing in size like this one did.                 
-                    <br>
-                    <br>
-                    After finishing this engine I realized how much easier it has become for me to grasp concepts and tools in different game engines. Understanding the ins and outs of how game engines get developed greatly shifted my perception of game development overall.
-                    <br>
-                    <br>
-                    I can say with certainty that developing this engine has been the most significant learning experience I had in my journey as a software engineer.
-                    <br>
-                    <br>
-                    If you want to find more information about the technical aspects of this project feel free to visit my <a href="https://github.com/KnipTang/KnipTang-Engine" target="_blank">Github readme paper</a> associated with this project.
+                    <div class="projectBig-Text">
+                      <br>
+                      The first game engine I ever made from scratch.
+                      <br>
+                      <br>
+                      The creation of this game engine took my engineering, C++, and programming skills to a whole new level.                    
+                      <br>
+                      <br>
+                      I learned so much about all kinds of different technical fields and concepts. It opened the world of all varying kinds of gameplay patterns and which ones are best to use in what situations and others you should better avoid.                    
+                      <br>
+                      <br>
+                      All the different techniques on how you could optimize and be capable of rendering and controlling all sorts of massive infastructors within your applications. Those patterns refueled the passion I had for programming, in the same way excitement I had when I first started out programming.
+                      Besides that, this project also taught me the crucial importance of good coding habits and practices, when working with a large code base that will keep increasing in size like this one did.                 
+                      <br>
+                      <br>
+                      After finishing this engine I realized how much easier it has become for me to grasp concepts and tools in different game engines. Understanding the ins and outs of how game engines get developed greatly shifted my perception of game development overall.
+                      <br>
+                      <br>
+                      I can say with certainty that developing this engine has been the most significant learning experience I had in my journey as a software engineer.
+                      <br>
+                      <br>
+                      If you want to find more information about the technical aspects of this project feel free to visit my <a href="https://github.com/KnipTang/KnipTang-Engine" target="_blank">Github readme paper</a> associated with this project.
+                    </div>    
                   </div>
                   <div class="project-arrow project-arrow-down">&#x25BC;</div> <!-- Down Arrow -->
               </div>
@@ -104,6 +106,7 @@ $_SESSION['form_loaded_time'] = time();
                 <div class="projectBig-desc projectBig-desc-Second">
                   <!-- <img class="float-right" src="images/Projects/FlappyBird_Gif.gif" alt="flappy bird genertic algorithm gif"> -->
                   <div class="projectBig-Title"><b>A genetic algorithm</b> perfectly plays the mobile game Flappy Bird with a <b>Neural Network</b> | <b id="project-type">Solo Project</b></div>
+                  <div class="projectBig-Text">
                     <br>
                     This project was my introduction to neural network programming. 
                     <br>
@@ -117,7 +120,8 @@ $_SESSION['form_loaded_time'] = time();
                     <br>
                     <br>
                     If you want to find more information about the technical aspects of this project feel free to visit my <a href="https://github.com/KnipTang/FlappyBird-Genetic_Algorithm" target="_blank">Github readme paper</a> associated with this project.
-                </div>
+                  </div>
+                  </div>
                 <div class="project-arrow project-arrow-down">&#x25BC;</div> <!-- Down Arrow -->
               </div>
               <div class="project-big">
@@ -128,6 +132,7 @@ $_SESSION['form_loaded_time'] = time();
                 </div>
                 <div class="projectBig-desc">
                   <div class="projectBig-Title"><b>Form Frenzy</b> - Two-Player Party Co-Op form matcher - Programmer & Game Designer - Unity <img class="text-symbols" src="Symboles/unity-brands-solid.svg" alt=""> | <b id="project-type">Team Project</b></div>
+                  <div class="projectBig-Text">
                   <br>
                   Form Frenzy… The first project I would develop in a group setting.
                   <br>
@@ -142,6 +147,7 @@ $_SESSION['form_loaded_time'] = time();
                   <br>
                   <br>
                   If you want to read more about the process of developing this project, you can read <a href="https://lars-maes.itch.io/group06project">the DevLogs on our itch.io page.</a>
+                </div>
                 </div>
                 <div class="project-arrow project-arrow-down">&#x25BC;</div> <!-- Down Arrow -->
               </div>
