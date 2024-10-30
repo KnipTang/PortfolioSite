@@ -14,7 +14,7 @@ $_SESSION['form_loaded_time'] = time();
     <script src="emailSubmit.js" defer></script>
     <script src="highlightActiveLink.js" defer></script>
     <script src="scollArrowDesc.js" defer></script>
-    <script src="restartGIF.js" defer></script>
+    <!-- <script src="restartGIF.js" defer></script> -->
     <!-- <script src="TitlesMax3Lines.js" defer></script> -->
     <title>Portfolio</title>
 </head>
