@@ -16,6 +16,7 @@ $_SESSION['form_loaded_time'] = time();
     <script src="scollArrowDesc.js" defer></script>
     <!-- <script src="restartGIF.js" defer></script> -->
     <!-- <script src="TitlesMax3Lines.js" defer></script> -->
+
     <title>Portfolio</title>
 </head>
 <body class="site-section">
@@ -129,9 +130,14 @@ $_SESSION['form_loaded_time'] = time();
               </div>
               <div class="project-big">
                 <div class="projectBig-main projectBig-main-one">
-                  <img src="images/Projects/Project_FormFrenzy.jpg" alt="Cinque Terre" class="projectBig-img" width="600" height="400">
-                  <a href="https://lars-maes.itch.io/group06project" target="_blank" class="clickable-overlay"></a>
-                  <a href="https://lars-maes.itch.io/group06project" target="_blank"><img src="Symboles/itch-io-brands-solid.svg" alt="Symbol" class="project-github-icon project-github-icon-left"></a>
+                  <video class="projectBig-img projectBig-video" width="320" height="240" controls="controls" loop autoplay muted>
+                      <source src="images/Projects/Project_FormFrenzy.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+                <div class="play-button"></div>
+                  <!-- <img src="images/Projects/Project_FormFrenzy.mp4" alt="Cinque Terre" class="projectBig-img" width="600" height="400"> -->
+                  <!-- <a href="https://lars-maes.itch.io/group06project" target="_blank" class="clickable-overlay"></a> -->
+                  <a href="https://lars-maes.itch.io/group06project" target="_blank"><img src="Symboles/itch-io-brands-solid.svg" alt="Symbol" class="project-github-icon project-github-icon-left-up"></a>
                   <!-- <iframe width="600" height="400" id="project-video" src="https://www.youtube.com/embed/i8GtI_XY5JU" title="Form Frenzy Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
                 </div>
                 <div class="projectBig-desc">
