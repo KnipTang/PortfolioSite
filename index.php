@@ -74,7 +74,7 @@ $_SESSION['form_loaded_time'] = time();
                   <a href="https://github.com/KnipTang/KnipTang-Engine" target="_blank"><img src="Symboles/SymbGitHub.png" alt="Symbol" class="project-github-icon project-github-icon-left"></a>
                 </div>
                   <div class="projectBig-desc">
-                    <div class="projectBig-Title"><b>KnipTang-Engine</b> - Custom C++ Game-Engine | <b id="project-type">Solo Project</b></div>
+                    <div class="projectBig-Title"><b>KnipTang-Engine</b> - Custom C++ Game-Engine | <b id="project-type">Solo Project</b> | <b id="project-type">Jan 2024 - June 2024</b></div>
                     <div class="projectBig-Text">
                         <div class="projectBig-TextSkills">
                           <b class="projectBig-TestSkills-title">Used Skills</b>
@@ -126,7 +126,7 @@ $_SESSION['form_loaded_time'] = time();
                 </div>
                 <div class="projectBig-desc projectBig-desc-Second">
                   <!-- <img class="float-right" src="images/Projects/FlappyBird_Gif.gif" alt="flappy bird genertic algorithm gif"> -->
-                  <div class="projectBig-Title"><b>Genetic algorithm</b> perfectly plays Flappy Bird with a <b>Neural Network</b> | <b id="project-type">Solo Project</b></div>
+                  <div class="projectBig-Title"><b>Genetic algorithm</b> perfectly plays Flappy Bird with a <b>Neural Network</b> | <b id="project-type">Solo Project</b> | <b id="project-type">Sep 2023 - Dec 2023</b></div>
                   <div class="projectBig-Text">
                     <div class="projectBig-TextSkills">
                       <b class="projectBig-TestSkills-title">Used Skills</b>
@@ -169,7 +169,7 @@ $_SESSION['form_loaded_time'] = time();
                   <!-- <iframe width="600" height="400" id="project-video" src="https://www.youtube.com/embed/i8GtI_XY5JU" title="Form Frenzy Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
                 </div>
                 <div class="projectBig-desc">
-                  <div class="projectBig-Title"><b>Form Frenzy</b> - Two-Player Party Co-Op form matcher - Programmer & Game Designer - Unity <img class="text-symbols" src="Symboles/unity-brands-solid.svg" alt=""> | <b id="project-type">Team Project</b></div>
+                  <div class="projectBig-Title"><b>Form Frenzy</b> - Two-Player Party Co-Op form matcher - Programmer & Game Designer - Unity <img class="text-symbols" src="Symboles/unity-brands-solid.svg" alt=""> | <b id="project-type">Team Project</b> | <b id="project-type">Jan 2024 - June 2024</b></div>
                   <div class="projectBig-Text">
                     <div class="projectBig-TextSkills">
                       <b class="projectBig-TestSkills-title">Used Skills</b>
