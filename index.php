@@ -245,6 +245,14 @@ $_SESSION['form_loaded_time'] = time();
                 </div>
                 </a>
               </div>
+              <div class="project-responsive">
+                <div class="project">
+                  <a href="https://github.com/KnipTang/AI_BehaviourTrees_NPC" target="_blank">
+                    <img src="images/Projects/Project_AIBehaviourTreeNPC.jpg" class="project-img" alt="Cinque Terre" width="600" height="400">
+                  <div class="desc"><b>Behaviour Tree</b> - AI for realistic NPC behaviour in a city environment <br><i><b>Work in Progress</b></i> <br><b id="project-type">Solo Project</b></div>
+                </div>
+                </a>
+              </div>
               <!--
               <div class="project-responsive site-section">
                 <div class="project">
