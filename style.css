@@ -268,7 +268,7 @@ div.project {
     height: 400px; /* Set a fixed height for all project containers */
 }
 
-div.project:hover {
+div.project:hover:not(.project-img) {
     border: 3px solid #d86a15;
     
     /* Scale up the project slightly on hover */
@@ -283,7 +283,7 @@ div.project:hover {
     height: 80%;
     object-fit: cover; /* Ensure the image covers the entire container */
     max-width: 100%;
-    border-radius: 15px 15px 0 0; /* Rounds the top corners of the image to match the project container */
+    /* border-radius: 15px 15px 0 0; Rounds the top corners of the image to match the project container */
 }
 
 #project-video {
