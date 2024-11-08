@@ -40,7 +40,7 @@ $_SESSION['form_loaded_time'] = time();
           <p>I am <b>Arne Olemans</b>, I always dreamed of <b>world domination</b>, but my mother refused to fund those dreams. So I became a <b>curious</b> and <b>driven</b> individual with a lifelong passion for exploring technology and the world around me. From a young age, I've been fascinated by <b>software</b> and <b>technology</b>, starting with my early days of tinkering with Nintendo games and the family desktop PC. This curiosity has fueled my journey into understanding and creating within the software developent space with a special intrest in <b>Game Engine Development!</b></p>
           <div class="cv-container">
             <div class="button-container">
-              <a href="CV/CV-Arne_OlemansV2.2.pdf" target="_blank">
+              <a href="CV/CV-Arne_OlemansV2.3.pdf" target="_blank">
                 <button class="cv-button">
                   <img src="Symboles/SymbCV.png" alt="Symbol" class="button-icon"> CV
                 </button>
@@ -295,7 +295,7 @@ $_SESSION['form_loaded_time'] = time();
     <div class="footer">
       <div class="footer-CV cv-container">
         <div class="button-container">
-          <a href="CV/CV-Arne_OlemansV2.2.pdf" target="_blank">
+          <a href="CV/CV-Arne_OlemansV2.3.pdf" target="_blank">
             <button class="cv-button">
               <img src="Symboles/SymbCV.png" alt="Symbol" class="button-icon"> CV
             </button>
