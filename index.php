@@ -82,6 +82,7 @@ $_SESSION['form_loaded_time'] = time();
                           <ul>
                             <li>C++</li>
                             <li>Github</li>
+                            <li>Self-made AABB<br>collision system</li>
                             <li>SDL</li>
                             <li>GLM</li>
                             <li>XInput</li>
